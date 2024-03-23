@@ -1,3 +1,8 @@
+#! /usr/bin/env node
+
+//SHABANG { # is SHA and ! is BANG }
+
+
 // Imports the data from the inquirer package
 import inquirer from "inquirer";
 
@@ -24,7 +29,8 @@ const answer = await inquirer.prompt([
 ]);
 
 // Conditions Statements
-// if and else if condition
+// if and else if condition 
+// agar answer operator ka value add ho toh console.log answer num1 + answer num2 krdo
 if (answer.operator === "addition") {
   console.log(answer.num1 + answer.num2);
 } else if (answer.operator === "multiplication") {
